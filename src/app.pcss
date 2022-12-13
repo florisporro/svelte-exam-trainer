@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Teko:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+	@apply bg-sky-400;
+	font-family: 'Roboto', sans-serif;
+}
+
+h2,
+h3 {
+	@apply mb-12;
+}
+
+h1 {
+	font-family: 'Teko', sans-serif;
+}
+
+h2 {
+	@apply text-white text-6xl text-center;
+}
+h3 {
+	@apply text-white text-3xl text-center;
+}
+
+a {
+	@apply text-sky-600 underline underline-offset-4;
+}
+a:hover {
+	@apply text-sky-800 no-underline transition-all;
+}
+
+.segment > p {
+	@apply text-white text-center font-bold;
+}
