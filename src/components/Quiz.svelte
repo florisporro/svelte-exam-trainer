@@ -1,0 +1,76 @@
+<script lang="ts">
+	import type { Quiz } from '$lib/quiz';
+	import type { MultipleChoiceQuestion } from '$lib/multiplechoicequestion';
+	import QuestionComponent from './Question.svelte';
+
+	export let quiz: Quiz;
+</script>
+
+<h1 class="text-4xl text-center">{quiz.topic}</h1>
+<ul class="questionlist mb-4">
+	{#each quiz.questions as question, i}
+		<li
+			class:correct={quiz.checkQuestionIndex(i) === true}
+			class:incorrect={quiz.checkQuestionIndex(i) === false}
+			class:active={i === quiz.currentQuestionIndex}
+		>
+			{i + 1}
+		</li>
+	{/each}
+	<li class:correct={quiz.hasPassed()} class:incorrect={!quiz.hasPassed()}>
+		{Number.isNaN(quiz.getScore()) ? 0 : Math.round(quiz.getScore() * 100)} %
+	</li>
+</ul>
+<p>Question {quiz.currentQuestionIndex + 1} of {quiz.questions.length}</p>
+<div class="question mb-4">
+	{#each quiz.questions as question, i}
+		{#if quiz.currentQuestionIndex === i}
+			<QuestionComponent
+				bind:question
+				bind:selectedAnswer={quiz.answers[i]}
+				on:answer={(event) => {
+					quiz.setAnswer(i, event.detail);
+				}}
+			/>
+		{/if}
+	{/each}
+</div>
+<div class="navigation">
+	<button
+		class="btn"
+		on:click={() => {
+			quiz.previousQuestion();
+			quiz = quiz;
+		}}>Previous</button
+	>
+	<button
+		class="btn"
+		on:click={() => {
+			quiz.nextQuestion();
+			quiz = quiz;
+		}}>Next</button
+	>
+</div>
+
+<style lang="postcss">
+	ul.questionlist {
+		@apply list-none flex flex-row gap-1 w-full;
+	}
+
+	ul.questionlist li {
+		@apply grow bg-slate-300 text-center px-2 py-2 rounded gap-5 cursor-pointer text-black;
+		list-style: none;
+	}
+
+	ul.questionlist li.active {
+		@apply bg-blue-500;
+	}
+
+	ul.questionlist li.correct {
+		@apply bg-green-500;
+	}
+
+	ul.questionlist li.incorrect {
+		@apply bg-red-500;
+	}
+</style>

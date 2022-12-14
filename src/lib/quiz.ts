@@ -2,22 +2,19 @@ import type { MultipleChoiceQuestion } from './multiplechoicequestion';
 
 export class Quiz {
 	// The list of all the questions in the quiz
-	private questions: MultipleChoiceQuestion[];
-
-	// The list of questions that the user has answered correctly
-	private correctQuestions: MultipleChoiceQuestion[] = [];
-
-	// The list of questions that the user has answered wrongly
-	private incorrectQuestions: MultipleChoiceQuestion[] = [];
+	questions: MultipleChoiceQuestion[];
 
 	// The current question that the user is answering
-	private currentQuestionIndex = 0;
+	currentQuestionIndex = 0;
 
 	// The number of questions that the quiz has
 	private numberOfQuestions: number;
 
+	// The list of questions that the user has answered
+	answers: { [key: number]: number } = {};
+
 	// The topic of the quiz
-	private topic: string;
+	topic: string;
 
 	// The passing grade factor for the quiz
 	private passingGradeFactor: number;
@@ -67,22 +64,24 @@ export class Quiz {
 		return this.questions[this.currentQuestionIndex];
 	}
 
-	public get numberOfCorrectQuestions(): number {
-		return this.correctQuestions.length;
-	}
-
-	public get numberOfIncorrectQuestions(): number {
-		return this.incorrectQuestions.length;
-	}
-
 	public get questionsRemaining(): number {
 		return this.numberOfQuestions - this.currentQuestionIndex;
+	}
+
+	public previousQuestion(): MultipleChoiceQuestion | null {
+		if (this.currentQuestionIndex === 0) {
+			return null;
+		}
+
+		this.currentQuestionIndex--;
+
+		return this.currentQuestion;
 	}
 
 	// Gets the next question in the quiz
 	public nextQuestion(): MultipleChoiceQuestion | null {
 		// If all the questions have been answered, return null
-		if (this.currentQuestionIndex > this.numberOfQuestions) {
+		if (this.currentQuestionIndex >= this.questions.length - 1) {
 			return null;
 		}
 
@@ -91,24 +90,33 @@ export class Quiz {
 		return this.currentQuestion;
 	}
 
-	// Checks the answer to the current question
-	public checkAnswer(answer: number): boolean {
-		if (answer === this.currentQuestion.correctAnswer) {
-			this.correctQuestions.push(this.currentQuestion);
-			return true;
-		}
+	// Sets the answer for the question
+	public setAnswer(question: number, answer: number): void {
+		this.answers[question] = answer;
+	}
 
-		this.incorrectQuestions.push(this.currentQuestion);
-		return false;
+	// Checks if the answer is correct
+	public checkQuestionIndex(index: number): boolean | null {
+		if (this.answers[index] === undefined) return null;
+		return this.questions[index].correctAnswer === this.answers[index];
 	}
 
 	// Gets the score of the quiz
 	public getScore(): number {
-		return this.correctQuestions.length / this.numberOfQuestions;
+		let score = 0;
+
+		for (const [index, answer] of Object.entries(this.answers)) {
+			if (this.questions[Number(index)].correctAnswer === answer) {
+				score++;
+			}
+		}
+
+		return score / Object.entries(this.answers).length;
 	}
 
 	// Evaluates whether the user has passed the quiz
 	public hasPassed(): boolean {
+		if (Number.isNaN(this.getScore())) return true;
 		return this.getScore() >= this.passingGradeFactor;
 	}
 }
