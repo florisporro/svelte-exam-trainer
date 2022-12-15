@@ -17,7 +17,7 @@ export class Quiz {
 	topic: string;
 
 	// The passing grade factor for the quiz
-	private passingGradeFactor: number;
+	passingGradeFactor: number;
 
 	constructor(
 		questions: MultipleChoiceQuestion[],
@@ -65,7 +65,7 @@ export class Quiz {
 	}
 
 	public get questionsRemaining(): number {
-		return this.numberOfQuestions - this.currentQuestionIndex;
+		return this.questions.length - Object.entries(this.answers).length;
 	}
 
 	public previousQuestion(): MultipleChoiceQuestion | null {
