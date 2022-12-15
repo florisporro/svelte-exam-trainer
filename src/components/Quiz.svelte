@@ -16,6 +16,10 @@
 			class:correct={quiz.checkQuestionIndex(i) === true}
 			class:incorrect={quiz.checkQuestionIndex(i) === false}
 			class:active={i === quiz.currentQuestionIndex}
+			on:click={() => {
+				quiz.currentQuestionIndex = i;
+				quiz = quiz;
+			}}
 		>
 			{i + 1}
 		</li>
@@ -71,7 +75,7 @@
 
 <style lang="postcss">
 	ul.questionlist {
-		@apply list-none flex flex-row gap-1 w-full;
+		@apply list-none flex flex-row gap-1 w-full flex-wrap;
 	}
 
 	ul.questionlist li {
