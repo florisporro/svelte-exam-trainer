@@ -4,6 +4,9 @@
 	import QuestionComponent from './Question.svelte';
 
 	export let quiz: Quiz;
+
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher();
 </script>
 
 <h1 class="text-4xl text-center">{quiz.topic}</h1>
@@ -36,20 +39,34 @@
 	{/each}
 </div>
 <div class="navigation">
-	<button
-		class="btn"
-		on:click={() => {
-			quiz.previousQuestion();
-			quiz = quiz;
-		}}>Previous</button
-	>
-	<button
-		class="btn"
-		on:click={() => {
-			quiz.nextQuestion();
-			quiz = quiz;
-		}}>Next</button
-	>
+	<div class="btn-group mb-6">
+		<button
+			class="btn"
+			on:click={() => {
+				quiz.previousQuestion();
+				quiz = quiz;
+			}}>Previous</button
+		>
+		<button
+			class="btn"
+			on:click={() => {
+				quiz.nextQuestion();
+				quiz = quiz;
+			}}>Next</button
+		>
+	</div>
+	<div class="finished">
+		{#if Object.entries(quiz.answers).length === quiz.questions.length}
+			<button
+				class="btn btn-success btn-lg"
+				on:click={() => {
+					dispatch('complete', quiz);
+				}}
+			>
+				Finish and score
+			</button>
+		{/if}
+	</div>
 </div>
 
 <style lang="postcss">
