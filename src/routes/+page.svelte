@@ -26,6 +26,18 @@
 
 	let quizActive = false;
 
+	let numberOfQuestionsIndex = 3;
+	let numberOfQuestions: { [key: number]: number | boolean } = {
+		0: 5,
+		1: 10,
+		2: 13,
+		3: 16,
+		4: 20,
+		5: 40,
+		6: 60,
+		7: true
+	};
+
 	function finishQuiz(quiz: QuizType) {
 		quizHistory.push({
 			topic: quiz.topic,
@@ -60,6 +72,27 @@
 		Return home (abort quiz)
 	</button>
 {:else}
+	<div class="numberOfQuestions mb-10">
+		<p>Number of questions in quiz:</p>
+		<input
+			bind:value={numberOfQuestionsIndex}
+			type="range"
+			min="0"
+			max="7"
+			class="range"
+			step="1"
+		/>
+		<div class="w-full flex justify-between text-xs px-2">
+			<span>5</span>
+			<span>10</span>
+			<span>13</span>
+			<span>16</span>
+			<span>20</span>
+			<span>40</span>
+			<span>60</span>
+			<span>All</span>
+		</div>
+	</div>
 	<ul class="topics">
 		{#each [...topics] as topic}
 			{@const topicHistory = quizHistory.filter((q) => q.topic === topic)}
@@ -67,7 +100,12 @@
 				<button
 					class="btn"
 					on:click={() => {
-						quiz = new QuizType(parsedQuestions, topic, 3, 0.75);
+						quiz = new QuizType(
+							parsedQuestions,
+							topic,
+							numberOfQuestions[numberOfQuestionsIndex],
+							0.75
+						);
 						quizActive = true;
 					}}
 				>
@@ -85,6 +123,19 @@
 			</li>
 		{/each}
 	</ul>
+	{#if quizHistory.length > 0}
+		<div class="clearHistory mt-10 text-center">
+			<button
+				class="btn btn-outline"
+				on:click={() => {
+					quizHistory = [];
+					localStorage.setItem('quizHistory', JSON.stringify(quizHistory));
+				}}
+			>
+				Clear history
+			</button>
+		</div>
+	{/if}
 {/if}
 
 <style lang="postcss">
@@ -106,10 +157,10 @@
 	}
 
 	ul.scores li.success {
-		@apply bg-green-700;
+		@apply dark:bg-green-700 bg-green-500;
 	}
 
 	ul.scores li.failure {
-		@apply bg-red-700;
+		@apply dark:bg-red-700 bg-red-500;
 	}
 </style>
