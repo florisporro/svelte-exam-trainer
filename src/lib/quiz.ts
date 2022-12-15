@@ -7,9 +7,6 @@ export class Quiz {
 	// The current question that the user is answering
 	currentQuestionIndex = 0;
 
-	// The number of questions that the quiz has
-	private numberOfQuestions: number;
-
 	// The list of questions that the user has answered
 	answers: { [key: number]: number } = {};
 
@@ -22,16 +19,18 @@ export class Quiz {
 	constructor(
 		questions: MultipleChoiceQuestion[],
 		topic: string,
-		numberOfQuestions: number,
+		numberOfQuestions: number | boolean,
 		passingGradeFactor: number
 	) {
 		// Filter the list of questions by the specified topic
 		this.questions = questions.filter((q) => q.topic === topic);
 
 		// Pick the specified number of questions randomly, without duplicates
-		this.questions = Quiz.pickRandomQuestions(this.questions, numberOfQuestions);
+		this.questions = Quiz.pickRandomQuestions(
+			this.questions,
+			numberOfQuestions === true ? this.questions.length : (numberOfQuestions as number)
+		);
 
-		this.numberOfQuestions = numberOfQuestions;
 		this.topic = topic;
 		this.passingGradeFactor = passingGradeFactor;
 	}
