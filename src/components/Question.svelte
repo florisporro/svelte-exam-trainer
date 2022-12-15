@@ -18,7 +18,7 @@
 	}
 </script>
 
-<p class="mb-10 text-white text-xl">{@html question.text}</p>
+<p>{@html question.text}</p>
 
 <ul>
 	{#each question.options as option, i}
@@ -35,7 +35,7 @@
 
 <style lang="postcss">
 	p {
-		@apply text-xl leading-relaxed;
+		@apply text-xl leading-relaxed mb-10 dark:text-white;
 	}
 
 	ul {
