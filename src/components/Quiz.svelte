@@ -59,7 +59,7 @@
 			}}>Next</button
 		>
 	</div>
-	<div class="finished">
+	<div class="finished mb-10">
 		{#if Object.entries(quiz.answers).length === quiz.questions.length}
 			<button
 				class="btn btn-success btn-lg"
