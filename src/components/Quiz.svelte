@@ -75,7 +75,7 @@
 
 <style lang="postcss">
 	ul.questionlist {
-		@apply list-none flex flex-row gap-1 w-full flex-wrap;
+		@apply list-none gap-1 w-full grid grid-cols-[repeat(auto-fit,minmax(50px,1fr))];
 	}
 
 	ul.questionlist li {
