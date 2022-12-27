@@ -28,6 +28,22 @@
 		{Number.isNaN(quiz.getScore()) ? 0 : Math.round(quiz.getScore() * 100)} %
 	</li>
 </ul>
+<div class="btn-group mb-6">
+	<button
+		class="btn"
+		on:click={() => {
+			quiz.previousQuestion();
+			quiz = quiz;
+		}}>Previous</button
+	>
+	<button
+		class="btn"
+		on:click={() => {
+			quiz.nextQuestion();
+			quiz = quiz;
+		}}>Next</button
+	>
+</div>
 <p>Question {quiz.currentQuestionIndex + 1} of {quiz.questions.length}</p>
 <div class="question mb-4">
 	{#each quiz.questions as question, i}
@@ -37,28 +53,16 @@
 				bind:selectedAnswer={quiz.answers[i]}
 				on:answer={(event) => {
 					quiz.setAnswer(i, event.detail);
+					setTimeout(() => {
+						quiz.nextQuestion();
+						quiz = quiz;
+					}, 800);
 				}}
 			/>
 		{/if}
 	{/each}
 </div>
 <div class="navigation">
-	<div class="btn-group mb-6">
-		<button
-			class="btn"
-			on:click={() => {
-				quiz.previousQuestion();
-				quiz = quiz;
-			}}>Previous</button
-		>
-		<button
-			class="btn"
-			on:click={() => {
-				quiz.nextQuestion();
-				quiz = quiz;
-			}}>Next</button
-		>
-	</div>
 	<div class="finished mb-10">
 		{#if Object.entries(quiz.answers).length === quiz.questions.length}
 			<button
