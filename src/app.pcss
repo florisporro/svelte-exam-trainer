@@ -5,9 +5,13 @@
 @tailwind utilities;
 
 body,
-html {
-	@apply bg-slate-200 dark:bg-slate-800 w-full h-full;
+main {
+	@apply w-full h-full bg-slate-200 dark:bg-slate-800;
 	font-family: 'Roboto', sans-serif;
+}
+
+main {
+	@apply min-h-screen;
 }
 
 h2,
