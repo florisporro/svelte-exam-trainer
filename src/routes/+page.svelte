@@ -76,7 +76,7 @@
 {:else}
 	<div class="quizselector pb-10">
 		<div class="h-24 py-12 mb-12">
-			<h1 class="text-4xl text-center">Svelte Exam Trainer</h1>
+			<h1 class="text-4xl text-center">PPL Exam Drill Quiz</h1>
 		</div>
 		<div class="numberOfQuestions mb-10">
 			<p>Number of questions in quiz:</p>
