@@ -1,6 +1,8 @@
 <script lang="ts">
 	import questions from '../data.json';
 
+	questions.forEach((q) => (q.correctAnswer = q.correctAnswer - 1));
+
 	const topics = new Set(questions.map((q) => q.topic));
 
 	import Quiz from '../components/Quiz.svelte';
