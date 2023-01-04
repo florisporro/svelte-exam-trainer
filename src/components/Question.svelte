@@ -18,22 +18,43 @@
 	}
 </script>
 
-<p>{@html question.text}</p>
+<div class="questioncontainer">
+	<div class="question">
+		<p>{@html question.text}</p>
 
-<ul>
-	{#each question.options as option, i}
-		<!-- svelte-ignore a11y-click-events-have-key-events -->
-		<li
-			on:click={() => selectAnswer(i)}
-			class:correct={i === question.correctAnswer && selectedAnswer !== undefined}
-			class:incorrect={selectedAnswer === i && i !== question.correctAnswer}
-		>
-			{@html option}
-		</li>
-	{/each}
-</ul>
+		<ul>
+			{#each question.options as option, i}
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
+				<li
+					on:click={() => selectAnswer(i)}
+					class:correct={i === question.correctAnswer && selectedAnswer !== undefined}
+					class:incorrect={selectedAnswer === i && i !== question.correctAnswer}
+				>
+					{@html option}
+				</li>
+			{/each}
+		</ul>
+	</div>
+	{#if question.attachment}
+		<div class="attachment">
+			<img src="attachments/{question.attachment}" alt="Attachment" />
+		</div>
+	{/if}
+</div>
 
 <style lang="postcss">
+	.questioncontainer {
+		@apply flex flex-row flex-wrap gap-5;
+	}
+
+	.attachment {
+		@apply sm:max-w-sm lg:max-w-lg object-cover object-center rounded-lg shadow-md;
+	}
+
+	.question {
+		@apply flex-1;
+	}
+
 	p {
 		@apply text-xl leading-relaxed mb-10 dark:text-white;
 	}

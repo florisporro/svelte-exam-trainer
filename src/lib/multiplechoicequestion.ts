@@ -11,10 +11,20 @@ export class MultipleChoiceQuestion {
 	// The index of the correct answer in the options array
 	public correctAnswer: number;
 
-	constructor(topic: string, text: string, options: string[], correctAnswer: number) {
+	// An optional attachment to the question
+	public attachment: string | undefined;
+
+	constructor(
+		topic: string,
+		text: string,
+		options: string[],
+		correctAnswer: number,
+		attachment?: string
+	) {
 		this.topic = topic;
 		this.text = text;
 		this.options = options;
 		this.correctAnswer = correctAnswer;
+		this.attachment = attachment;
 	}
 }

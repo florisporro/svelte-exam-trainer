@@ -3,6 +3,7 @@
 		"topic": "Maths",
 		"text": "What is 2+2?",
 		"options": ["4", "5", "6", "7"],
-		"correctAnswer": 0
+		"correctAnswer": 0,
+		"attachment": "maths.png"
 	}
 ]
