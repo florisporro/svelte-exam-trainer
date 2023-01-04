@@ -846,7 +846,8 @@
 		"text": "89 What is shown on the printed sign? See figure (ALW-019) Siehe Anlage 1 ",
 		"options": ["Point A on a taxiway", "Part A of the runway", "Taxiway A", "Parking position A"],
 		"correctAnswer": 3,
-		"topic": "Air Law"
+		"topic": "Air Law",
+		"attachment": "ALW-019.png"
 	},
 	{
 		"text": "90 What is shown on the printed sign? See figure (ALW-020) Siehe Anlage 2 ",
@@ -857,7 +858,8 @@
 			"2500 m in the stated direction till reaching the departure point of the runway"
 		],
 		"correctAnswer": 2,
-		"topic": "Air Law"
+		"topic": "Air Law",
+		"attachment": "ALW-020.png"
 	},
 	{
 		"text": "91 What is the meaning of this sign at an aerodrome? See figure (ALW-011) Siehe Anlage 3 ",
@@ -868,7 +870,8 @@
 			"After take-off and before landing all turns have to be made to the right"
 		],
 		"correctAnswer": 2,
-		"topic": "Air Law"
+		"topic": "Air Law",
+		"attachment": "ALW-011.png"
 	},
 	{
 		"text": "92 What is the meaning of the illustrated ground signal as shown in the signal area of an aerodrome? See figure (ALW-012) Siehe Anlage 4 ",
@@ -879,7 +882,8 @@
 			"Ground movement restricted to hard surfaces"
 		],
 		"correctAnswer": 3,
-		"topic": "Air Law"
+		"topic": "Air Law",
+		"attachment": "ALW-012.png"
 	},
 	{
 		"text": "93 What is the meaning of \u0022DETRESFA\u0022?",
@@ -1418,13 +1422,15 @@
 		"text": "55 The ideal level of arousal is at which point in the diagram? See figure (HPL- 002) P = Performance A = Arousal / Stress Siehe Anlage 1 ",
 		"options": ["Point A", "Point D", "Point C", "Point B"],
 		"correctAnswer": 4,
-		"topic": "Human Performance and Limitations"
+		"topic": "Human Performance and Limitations",
+		"attachment": "HPL-002.png"
 	},
 	{
 		"text": "56 At which point in the diagram will a pilot find himself to be overstrained? See figure (HPL-002) P = Perfromance A = Arousal / Stress Siehe Anlage 1 ",
 		"options": ["Point D", "Point B", "Point C", "Point A"],
 		"correctAnswer": 1,
-		"topic": "Human Performance and Limitations"
+		"topic": "Human Performance and Limitations",
+		"attachment": "HPL-002.png"
 	},
 	{
 		"text": "57 Which of the following qualities are influenced by stress? 1. Attention 2. Concentration 3. Responsiveness 4. Memory",
@@ -1956,19 +1962,22 @@
 			"Altocumulus lenticularis"
 		],
 		"correctAnswer": 4,
-		"topic": "Meteorology"
+		"topic": "Meteorology",
+		"attachment": "MET-001.png"
 	},
 	{
 		"text": "57 What cloud type does the picture show? See figure (MET-002). Siehe Anlage 2 ",
 		"options": ["Stratus", "Cumulus", "Altus", "Cirrus"],
 		"correctAnswer": 2,
-		"topic": "Meteorology"
+		"topic": "Meteorology",
+		"attachment": "MET-002.png"
 	},
 	{
 		"text": "58 What cloud type does the picture show? See figure (MET-004). Siehe Anlage 3 ",
 		"options": ["Altocumulus", "Cumulus", "Stratus", "Cirrus"],
 		"correctAnswer": 4,
-		"topic": "Meteorology"
+		"topic": "Meteorology",
+		"attachment": "MET-004.png"
 	},
 	{
 		"text": "59 What factor may affect the top of cumulus clouds?",
@@ -2080,19 +2089,22 @@
 		"text": "70 The symbol labeled (1) as shown in the picture is a / an... See figure (MET-005) Siehe Anlage 4 ",
 		"options": ["front aloft.", "occlusion.", "warm front.", "cold front."],
 		"correctAnswer": 4,
-		"topic": "Meteorology"
+		"topic": "Meteorology",
+		"attachment": "MET-005.png"
 	},
 	{
 		"text": "71 The symbol labeled (2) as shown in the picture is a / an... See figure (MET-005) Siehe Anlage 4 ",
 		"options": ["front aloft.", "cold front.", "warm front.", "occlusion."],
 		"correctAnswer": 3,
-		"topic": "Meteorology"
+		"topic": "Meteorology",
+		"attachment": "MET-005.png"
 	},
 	{
 		"text": "72 The symbol labeled (3) as shown in the picture is a / an... See figure (MET-005) Siehe Anlage 4 ",
 		"options": ["front aloft.", "warm front.", "cold front.", "occlusion."],
 		"correctAnswer": 4,
-		"topic": "Meteorology"
+		"topic": "Meteorology",
+		"attachment": "MET-005.png"
 	},
 	{
 		"text": "73 What cloud sequence can typically be observed during the passage of a warm front?",
@@ -3461,13 +3473,15 @@
 		"text": "11 Number 2 in the drawing corresponds to the... See figure (PFA-010) Siehe Anlage 1 ",
 		"options": ["chord line.", "chord.", "angle of attack.", "profile thickness."],
 		"correctAnswer": 2,
-		"topic": "Principles of Flight (Aeroplane)"
+		"topic": "Principles of Flight (Aeroplane)",
+		"attachment": "PFA-010.png"
 	},
 	{
 		"text": "12 Number 3 in the drawing corresponds to the... See figure (PFA-010) Siehe Anlage 1 ",
 		"options": ["chord.", "thickness.", "camber line.", "chord line."],
 		"correctAnswer": 3,
-		"topic": "Principles of Flight (Aeroplane)"
+		"topic": "Principles of Flight (Aeroplane)",
+		"attachment": "PFA-010.png"
 	},
 	{
 		"text": "13 The angle of attack is the angle between...",
@@ -3490,13 +3504,15 @@
 		"text": "15 Which point on the aerofoil is represented by number 3? See figure (PFA-009) Siehe Anlage 2 ",
 		"options": ["Separation point", "Center of pressure", "Stagnation point", "Transition point"],
 		"correctAnswer": 4,
-		"topic": "Principles of Flight (Aeroplane)"
+		"topic": "Principles of Flight (Aeroplane)",
+		"attachment": "PFA-009.png"
 	},
 	{
 		"text": "16 Which point on the aerofoil is represented by number 4? See figure (PFA-009) Siehe Anlage 2 ",
 		"options": ["Center of pressure", "Separation point", "Transition point", "Stagnation point"],
 		"correctAnswer": 2,
-		"topic": "Principles of Flight (Aeroplane)"
+		"topic": "Principles of Flight (Aeroplane)",
+		"attachment": "PFA-009.png"
 	},
 	{
 		"text": "17 Wing tip vortex development begins during which phase of flight?",
@@ -3513,7 +3529,8 @@
 		"text": "18 Which point on the aerofoil is represented by number 1? See figure (PFA-009) Siehe Anlage 2 ",
 		"options": ["Transition point", "Stagnation point", "Center of pressure", "Separation point"],
 		"correctAnswer": 2,
-		"topic": "Principles of Flight (Aeroplane)"
+		"topic": "Principles of Flight (Aeroplane)",
+		"attachment": "PFA-009.png"
 	},
 	{
 		"text": "19 What pattern can be found at the stagnation point?",
@@ -3596,7 +3613,8 @@
 		"text": "26 The angle (alpha) shown in the figure is referred to as... See figure (PFA-003) DoF: direction of airflow Siehe Anlage 3 ",
 		"options": ["lift angle.", "angle of incidence.", "angle of inclination.", "angle of attack."],
 		"correctAnswer": 4,
-		"topic": "Principles of Flight (Aeroplane)"
+		"topic": "Principles of Flight (Aeroplane)",
+		"attachment": "PFA-003.png"
 	},
 	{
 		"text": "27 In order to improve the stall characteristics of an aircraft, the wing is twisted outwards (the angle of incidence varies spanwise). This is known as...",
@@ -3991,7 +4009,8 @@
 			"Directional stability by lift generation"
 		],
 		"correctAnswer": 2,
-		"topic": "Principles of Flight (Aeroplane)"
+		"topic": "Principles of Flight (Aeroplane)",
+		"attachment": "PFA-006.png"
 	},
 	{
 		"text": "67 \u0022Longitudinal stability\u0022 is referred to as stability around which axis?",
@@ -4270,13 +4289,15 @@
 		"text": "95 Point number 1 in the figure indicates which flight state? See figure (PFA-008) Siehe Anlage 5 ",
 		"options": ["Stall", "Inverted flight", "Best gliding angle", "Slow flight"],
 		"correctAnswer": 2,
-		"topic": "Principles of Flight (Aeroplane)"
+		"topic": "Principles of Flight (Aeroplane)",
+		"attachment": "PFA-008.png"
 	},
 	{
 		"text": "96 Point number 5 in the figure indicates which flight state? See figure (PFA-008) Siehe Anlage 5 ",
 		"options": ["Best gliding angle", "Slow flight", "Stall", "Inverted flight"],
 		"correctAnswer": 2,
-		"topic": "Principles of Flight (Aeroplane)"
+		"topic": "Principles of Flight (Aeroplane)",
+		"attachment": "PFA-008.png"
 	},
 	{
 		"text": "97 The bank in a two-minute turn (rate one turn) depends on the...",
@@ -4567,7 +4588,8 @@
 			"Decrease of climb rate"
 		],
 		"correctAnswer": 4,
-		"topic": "Operational Procedures"
+		"topic": "Operational Procedures",
+		"attachment": "OPR-001.png"
 	},
 	{
 		"text": "26 Which phenomenon may be expected at point 3 of the miroburst? See figure (OPR-001) Siehe Anlage 1 ",
@@ -4578,7 +4600,8 @@
 			"Decrease in climb rate"
 		],
 		"correctAnswer": 1,
-		"topic": "Operational Procedures"
+		"topic": "Operational Procedures",
+		"attachment": "OPR-001.png"
 	},
 	{
 		"text": "27 How can a wind shear encounter in flight be avoided?",
@@ -5193,7 +5216,8 @@
 		"text": "26 The position of the center of gravity equals... See figure (PFP-052e) Siehe Anlage 1 ",
 		"options": ["147.5 in.", "145.7 in.", "142 in.", "137.5 in."],
 		"correctAnswer": 3,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-052e.png"
 	},
 	{
 		"text": "27 What mass equals 102 litres of Avgas 100LL?",
@@ -5223,7 +5247,8 @@
 		"text": "31 The position of the center of gravity (including fuel) equals... See figure(PFP-053e) Siehe Anlage 2 ",
 		"options": ["37.1 cm.", "0.401 m.", "37.3 cm.", "0.403 m."],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-053e.png"
 	},
 	{
 		"text": "32 For the purpose of a flight preparation, the pilot calculates a total take-off mass of 750 kg and a total moment of 625 mmkg. Which cross marks the center of gravity (CG)? See annex (PFP-003) Siehe Anlage 3 ",
@@ -5258,7 +5283,8 @@
 			"Aircraft A has a higher flap setting than aircraft B"
 		],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-007.png"
 	},
 	{
 		"text": "37 How does aircraft flap configuration influence the take-off performance?",
@@ -5390,7 +5416,8 @@
 			"VNO: Maximum speed for normal operations"
 		],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-008.png"
 	},
 	{
 		"text": "49 The end of the green arc (4) indicates which airspeed? See figure (PFP-008) Siehe Anlage 8 ",
@@ -5401,7 +5428,8 @@
 			"VS1: Stall speed with flaps up"
 		],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-008.png"
 	},
 	{
 		"text": "50 The red marking at the end of the yellow arc (5) indicates which airspeed? See figure (PFP-008) Siehe Anlage 8 ",
@@ -5412,7 +5440,8 @@
 			"VNE: Never-exceed speed"
 		],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-008.png"
 	},
 	{
 		"text": "51 Which climb speed may be used to optimize the rate of climb (e.g. to reach a desired altitude within minimum time)?",
@@ -5633,13 +5662,15 @@
 		"text": "81 According to the aeronautical chart, Friesach/Hirt (LOKH) has a 707 m grass runway. Prevailing runway is 17 due to a surface wind of 18010KT. The required landing distance for your aircraft under present conditions is 550 m. Considering the NOTAM below ,is it safe to plan LOKH as an alternate aerodrome? See figure (PFP-026) Siehe Anlage 17 ",
 		"options": ["Don\u0027t know.", "Maybe.", "Yes.", "No."],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-026.png"
 	},
 	{
 		"text": "82 Up to which altitude is an overflight prohibited according to the NOTAM? See figure (PFP-024) Siehe Anlage 18 ",
 		"options": ["Height 9500 ft", "Altitude 9500 ft MSL", "Altitude 9500 m MSL", "Flight Level 95"],
 		"correctAnswer": 2,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-024.png"
 	},
 	{
 		"text": "83 The EOBT (estimated off-block time) is specified in the ATS flight plan as...",
@@ -5661,13 +5692,15 @@
 			"Border crossing flight."
 		],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-051a.png"
 	},
 	{
 		"text": "85 The specified speed in the ATS flight plan equals: See annex (PFP-051) Siehe Anlage 20 ",
 		"options": ["1000 kt.", "100 m/h.", "100 km/h.", "100 kt."],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-051.png"
 	},
 	{
 		"text": "86 What must be considered for cross-border flights?",
@@ -5842,7 +5875,8 @@
 		"text": "4 Which wing configuration is shown in the attachment? See figure (AGK-002) Siehe Anlage 1 ",
 		"options": ["Strut-braced high wing", "High wing", "Mid wing", "Low wing"],
 		"correctAnswer": 1,
-		"topic": "Aircraft General Knowledge"
+		"topic": "Aircraft General Knowledge",
+		"attachment": "AGK-002.png"
 	},
 	{
 		"text": "5 A construction made of frames and stringer with a supporting skin is called...",
@@ -5859,7 +5893,8 @@
 		"text": "6 Which tail assembly is shown in the attachment? See figure (AGK-003) Siehe Anlage 2 ",
 		"options": ["V-tail", "T-tail", "Fuselage-mounted tail", "Cruciform tail"],
 		"correctAnswer": 2,
-		"topic": "Aircraft General Knowledge"
+		"topic": "Aircraft General Knowledge",
+		"attachment": "AGK-003.png"
 	},
 	{
 		"text": "7 What are the major components of an aircraft\u0027s tail?",
@@ -5944,7 +5979,8 @@
 		"text": "16 Number 1 on the gear designates the... See figure (AGK-005) Siehe Anlage 3 ",
 		"options": ["fork.", "strut.", "torque link.", "inner shock absorber."],
 		"correctAnswer": 1,
-		"topic": "Aircraft General Knowledge"
+		"topic": "Aircraft General Knowledge",
+		"attachment": "AGK-005.png"
 	},
 	{
 		"text": "17 The fuselage structure may be damaged by...",
@@ -5961,7 +5997,8 @@
 		"text": "18 Number 2 on the gear designates the... See figure (AGK-005) Siehe Anlage 3 ",
 		"options": ["fork.", "torque link.", "fixed outer cylinder.", "movable inner cylinder."],
 		"correctAnswer": 4,
-		"topic": "Aircraft General Knowledge"
+		"topic": "Aircraft General Knowledge",
+		"attachment": "AGK-005.png"
 	},
 	{
 		"text": "19 How is the nose or tail wheel usually controlled on small aircraft and motor gliders?",
@@ -6000,7 +6037,8 @@
 			"The correct position of the outer isolation layers"
 		],
 		"correctAnswer": 3,
-		"topic": "Aircraft General Knowledge"
+		"topic": "Aircraft General Knowledge",
+		"attachment": "AGK-006.png"
 	},
 	{
 		"text": "23 About how many axes does an aircraft move and how are these axes called?",
@@ -6256,7 +6294,8 @@
 			"Third stroke - power"
 		],
 		"correctAnswer": 3,
-		"topic": "Aircraft General Knowledge"
+		"topic": "Aircraft General Knowledge",
+		"attachment": "AGK-007.png"
 	},
 	{
 		"text": "49 Which part of the cycle of a four-stroke Otto engine can be seen in the attachment? See figure (AGK-008) Siehe Anlage 6 ",
@@ -6267,7 +6306,8 @@
 			"First stroke - induction"
 		],
 		"correctAnswer": 1,
-		"topic": "Aircraft General Knowledge"
+		"topic": "Aircraft General Knowledge",
+		"attachment": "AGK-008.png"
 	},
 	{
 		"text": "50 What is likely to be the cause if the engine runs unusually rough while checking the magnetos?",
@@ -6428,7 +6468,8 @@
 			"aerodynamic wing twist."
 		],
 		"correctAnswer": 1,
-		"topic": "Aircraft General Knowledge"
+		"topic": "Aircraft General Knowledge",
+		"attachment": "AGK-011.png"
 	},
 	{
 		"text": "66 How should a power increase be executed on a constant-speed propeller, provided that no other procedure is described in the flight manual?",
@@ -7101,7 +7142,8 @@
 		"text": "6 The circumference of the Earth at the equator is approximately... See figure (NAV-002) Siehe Anlage 1 ",
 		"options": ["10800 km.", "40000 NM.", "12800 km.", "21600 NM."],
 		"correctAnswer": 4,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-002.png"
 	},
 	{
 		"text": "7 What is the difference in latitude between A (12\u00B053\u002730\u0027\u0027N) and B (07\u00B034\u002730\u0027\u0027S)?",
@@ -7720,7 +7762,8 @@
 		"text": "85 What radio navigation aid can be received with the attached aerial? See figure (NAV-017) Siehe Anlage 5 ",
 		"options": ["VOR", "DME", "NDB", "VDF"],
 		"correctAnswer": 3,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-017.png"
 	},
 	{
 		"text": "86 The approximate propagation speed of electromagnetic waves is...",
@@ -7920,7 +7963,8 @@
 		"text": "110 The pilot wants to proceed directly to the beacon. The wind is calm. The pilot should follow a QDM of... See figure (NAV-019) Siehe Anlage 6 ",
 		"options": ["080\u00B0.", "200\u00B0.", "260\u00B0.", "230\u00B0."],
 		"correctAnswer": 3,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-019.png"
 	},
 	{
 		"text": "111 What is the difference between a locator beacon and a non-directional beacon (NDB)?",
