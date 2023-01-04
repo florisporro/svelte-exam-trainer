@@ -1,16 +1,7 @@
 <script lang="ts">
 	import questions from '../data.json';
 
-	const parsedQuestions = questions.map((q) => {
-		return {
-			topic: q.Topic,
-			text: q.Question,
-			options: q.AnswersList,
-			correctAnswer: q.CorrectAnswer - 1
-		};
-	});
-
-	const topics = new Set(parsedQuestions.map((q) => q.topic));
+	const topics = new Set(questions.map((q) => q.topic));
 
 	import Quiz from '../components/Quiz.svelte';
 	import { Quiz as QuizType } from '$lib/quiz';
@@ -124,7 +115,7 @@
 						class="btn"
 						on:click={() => {
 							quiz = new QuizType(
-								parsedQuestions,
+								questions,
 								topic,
 								numberOfQuestions[numberOfQuestionsIndex],
 								passingGrade
