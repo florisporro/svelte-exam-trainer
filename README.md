@@ -30,3 +30,8 @@ You can preview the production build with `npm run preview`.
 ## Deployment
 
 Svelte is easily deployed on a number of platforms. The demo above is deployed on CloudFlare Pages.
+
+## Contibutors
+
+ - paulditerwich
+ - florisporro
