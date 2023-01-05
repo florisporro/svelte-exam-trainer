@@ -90,6 +90,20 @@
 					></span
 				>
 			</div>
+			<p class="mb-2">
+				This tool may help you prepare for the EASA PPL(A) exams. No guarantuee is made for the
+				accuracy of the questions, they were obtained as PDFs from an examiner and converted. An
+				attempt has been made to include all attachments and references. If you find any errors,
+				please report them on GitHub.
+			</p>
+			<p>
+				<!-- svelte-ignore security-anchor-rel-noreferrer -->
+				If this tool has helped you, and you wish to give thanks, please
+				<a href="https://www.stichtinghoogvliegers.nl/ondersteun/doneer-via-tikkie" target="_blank"
+					>consider donating to the Dutch Stichting Hoogvliegers</a
+				>, this not-for-profit organisation gives sick and disabled children the opportunity to have
+				an airborne adventure of a lifetime.
+			</p>
 		</div>
 		<div class="numberOfQuestions mb-10">
 			<p>Number of questions in quiz:</p>
