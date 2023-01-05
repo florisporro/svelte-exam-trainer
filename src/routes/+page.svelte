@@ -71,8 +71,25 @@
 	</div>
 {:else}
 	<div class="quizselector pb-10">
-		<div class="h-24 py-12 mb-12">
+		<div class="py-12">
 			<h1 class="text-4xl text-center">PPL Exam Drill Quiz</h1>
+			<div class="text-sm text-center mb-12">
+				<span
+					><a
+						href="https://github.com/florisporro/svelte-exam-trainer/tree/ppl-exam-trainer"
+						target="_blank"
+						rel="noreferrer">GitHub</a
+					></span
+				>
+				-
+				<span
+					><a
+						href="https://github.com/florisporro/svelte-exam-trainer/issues"
+						target="_blank"
+						rel="noreferrer">Issues</a
+					></span
+				>
+			</div>
 		</div>
 		<div class="numberOfQuestions mb-10">
 			<p>Number of questions in quiz:</p>
