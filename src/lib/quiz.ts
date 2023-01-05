@@ -22,8 +22,7 @@ export class Quiz {
 		numberOfQuestions: number | boolean,
 		passingGradeFactor: number
 	) {
-		// Filter the list of questions by the specified topic
-		this.questions = questions.filter((q) => q.topic === topic);
+		this.questions = questions;
 
 		// Pick the specified number of questions randomly, without duplicates
 		this.questions = Quiz.pickRandomQuestions(
@@ -65,6 +64,14 @@ export class Quiz {
 
 	public get questionsRemaining(): number {
 		return this.questions.length - Object.entries(this.answers).length;
+	}
+
+	public get correctAnswers(): MultipleChoiceQuestion[] {
+		return this.questions.filter((q, i) => this.checkQuestionIndex(i) === true);
+	}
+
+	public get incorrectAnswers(): MultipleChoiceQuestion[] {
+		return this.questions.filter((q, i) => this.checkQuestionIndex(i) === false);
 	}
 
 	public previousQuestion(): MultipleChoiceQuestion | null {

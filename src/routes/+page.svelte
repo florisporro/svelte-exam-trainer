@@ -14,8 +14,9 @@
 	if (browser) {
 		localStorageValue = localStorage.getItem('quizHistory');
 	}
-	let quizHistory: { topic: string; score: number; passingGradeFactor: number }[] =
-		localStorageValue ? JSON.parse(localStorageValue) : [];
+	let quizHistory: { [key: string]: any }[] = localStorageValue
+		? JSON.parse(localStorageValue)
+		: [];
 
 	let quizActive = false;
 
@@ -35,6 +36,8 @@
 
 	function finishQuiz(quiz: QuizType) {
 		quizHistory.push({
+			correctAnswers: quiz.correctAnswers,
+			incorrectAnswers: quiz.incorrectAnswers,
 			topic: quiz.topic,
 			score: quiz.getScore(),
 			passingGradeFactor: quiz.passingGradeFactor
@@ -113,20 +116,39 @@
 			{#each [...topics] as topic}
 				{@const topicHistory = quizHistory.filter((q) => q.topic === topic)}
 				<li>
-					<button
-						class="btn"
-						on:click={() => {
-							quiz = new QuizType(
-								questions,
-								topic,
-								numberOfQuestions[numberOfQuestionsIndex],
-								passingGrade
-							);
-							quizActive = true;
-						}}
-					>
-						{topic}
-					</button>
+					<div class="btn-group">
+						<button
+							class="btn"
+							on:click={() => {
+								quiz = new QuizType(
+									questions.filter((q) => q.topic === topic),
+									topic,
+									numberOfQuestions[numberOfQuestionsIndex],
+									passingGrade
+								);
+								quizActive = true;
+							}}
+						>
+							{topic}
+						</button>
+						{#if topicHistory.length > 0}
+							{@const incorrectAnswers = topicHistory.map((q) => q.incorrectAnswers).flat()}
+							<button
+								class="btn btn-outline"
+								on:click={() => {
+									quiz = new QuizType(
+										incorrectAnswers,
+										'Incorrect questions quiz',
+										incorrectAnswers.length,
+										passingGrade
+									);
+									quizActive = true;
+								}}
+							>
+								Repeat incorrect</button
+							>
+						{/if}
+					</div>
 					{#if topicHistory.length > 0}
 						<ul class="scores">
 							{#each topicHistory as history}
@@ -138,6 +160,25 @@
 					{/if}
 				</li>
 			{/each}
+			{#if quizHistory.length > 0}
+				{@const incorrectAnswers = quizHistory.map((q) => q.incorrectAnswers).flat()}
+				<li>
+					<button
+						class="btn btn-accent"
+						on:click={() => {
+							quiz = new QuizType(
+								incorrectAnswers,
+								'Incorrect questions quiz',
+								incorrectAnswers.length,
+								passingGrade
+							);
+							quizActive = true;
+						}}
+					>
+						Repeat all incorrect questions
+					</button>
+				</li>
+			{/if}
 		</ul>
 		{#if quizHistory.length > 0}
 			<div class="text-center">
