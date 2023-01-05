@@ -74,7 +74,7 @@
 			<div class="text-sm text-center mb-12">
 				<span
 					><a
-						href="https://github.com/florisporro/svelte-exam-trainer/tree/ppl-exam-trainer"
+						href="https://github.com/florisporro/svelte-exam-trainer/"
 						target="_blank"
 						rel="noreferrer">GitHub</a
 					></span
