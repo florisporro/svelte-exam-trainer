@@ -9,6 +9,8 @@
 
 	export let selectedAnswer: undefined | number;
 
+	let popupAttachment = false;
+
 	function selectAnswer(i: number) {
 		if (selectedAnswer !== undefined && !canReselect) {
 			return;
@@ -37,7 +39,14 @@
 	</div>
 	{#if question.attachment}
 		<div class="attachment">
-			<img src="attachments/{question.attachment}" alt="Attachment" />
+			<img
+				src="attachments/{question.attachment}"
+				alt="Attachment"
+				on:click={() => (popupAttachment = !popupAttachment)}
+				class={popupAttachment
+					? 'w-screen h-screen p-5 fixed left-0 top-0 object-contain mx-auto'
+					: ''}
+			/>
 		</div>
 	{/if}
 </div>
@@ -49,6 +58,10 @@
 
 	.attachment {
 		@apply sm:max-w-sm lg:max-w-lg object-cover object-center rounded-lg shadow-md;
+	}
+
+	.attachment img {
+		@apply cursor-pointer;
 	}
 
 	.question {
