@@ -12,7 +12,7 @@ export class MultipleChoiceQuestion {
 	public correctAnswer: number;
 
 	// An optional attachment to the question
-	public attachment: string | undefined;
+	public attachment?: string | undefined;
 
 	constructor(
 		topic: string,
