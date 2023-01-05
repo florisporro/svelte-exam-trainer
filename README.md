@@ -1,22 +1,12 @@
-# create-svelte
+# svelte-exam-trainer
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Svelte-based multiple choice examination tool. Built to help train for examinations, could also be easily adapted for actual examinations.
 
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Demo: [Private Pilot License theory exams](https://ppl-exam-trainer.pages.dev/)
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone the repository locally, then install dependencies with `npm install` (or `pnpm install` or `yarn`) and start a development server:
 
 ```bash
 npm run dev
@@ -36,3 +26,7 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Deployment
+
+Svelte is easily deployed on a number of platforms. The demo above is deployed on CloudFlare Pages.
