@@ -83,7 +83,7 @@
 	}
 
 	ul.questionlist li {
-		@apply grow bg-slate-300 text-center px-2 py-2 rounded gap-5 cursor-pointer text-black;
+		@apply grow bg-slate-300 text-center py-1 rounded gap-5 cursor-pointer text-black text-sm;
 		list-style: none;
 	}
 
