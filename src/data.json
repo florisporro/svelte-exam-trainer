@@ -5254,25 +5254,29 @@
 		"text": "32 For the purpose of a flight preparation, the pilot calculates a total take-off mass of 750 kg and a total moment of 625 mmkg. Which cross marks the center of gravity (CG)? See annex (PFP-003) Siehe Anlage 3 ",
 		"options": ["4", "2", "1", "3"],
 		"correctAnswer": 3,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-003.png"
 	},
 	{
 		"text": "33 For the purpose of a flight preparation the pilot calculates a total take-off mass of 725 kg and a total moment of 650 mmkg. Which cross marks the center of gravity (CG)? See annex (PFP-004) Siehe Anlage 4 ",
 		"options": ["1", "2", "4", "3"],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-004.png"
 	},
 	{
 		"text": "34 For the purpose of a flight preparation the pilot calculates a total take-off mass of 775 kg and a total moment of 700 mmkg. Which cross marks the center of gravity (CG)? See annex (PFP-005) Siehe Anlage 5 ",
 		"options": ["3", "2", "4", "1"],
 		"correctAnswer": 3,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-005.png"
 	},
 	{
 		"text": "35 Which is the most recently determined empty mass and the associated center of gravity (CG) arm from the aircraft documentation? See annex (PFP-006) Siehe Anlage 6 ",
 		"options": ["5 kg; 1.3 m", "4 kg; 1.1 m", "498 kg; 280.59 m", "512 kg; 285.39 m"],
 		"correctAnswer": 3,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-006.png"
 	},
 	{
 		"text": "36 How does the aircraft configuration influence take-off performance while all other parameters remaining constant? See figure (PFP-007) Siehe Anlage 7 ",
@@ -5464,7 +5468,8 @@
 		"text": "53 Given the following conditions, the take-off distance equals... Outside air temperature: -20\u00B0 C Pressure Altitude: 5000 ft Aeroplane mass: 750 kg Headwind: 10 kt See annex (PFP-009) Siehe Anlage 9 ",
 		"options": ["450 m.", "380 m.", "410 m.", "310 m."],
 		"correctAnswer": 2,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-009.png"
 	},
 	{
 		"text": "54 A pilot wants to take off on runway 36, the reported wind is 240 degrees, 12 knots. What is the value of the wind components acting on the aircraft on take-off and landing?",
@@ -5481,13 +5486,15 @@
 		"text": "55 What is the take-off distance at 750 kg take-off mass, standard (ISA) conditions at an elevation of 4000 ft with 5 kt tailwind? See annex (PFP-009) Siehe Anlage 9 ",
 		"options": ["900 m", "320 m", "630 m", "480 m"],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-009.png"
 	},
 	{
 		"text": "56 What is the take-off distance at 705 kg take-off mass, OAT 20\u00B0 C, QNH 1013 hPa at an elevation of 3500 ft with 5 kt tailwind? See annex (PFP-009) Siehe Anlage 9 ",
 		"options": ["720 m", "880 m", "790 m", "820 m"],
 		"correctAnswer": 2,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-009.png"
 	},
 	{
 		"text": "57 A pilot wants to take off on runway 36, the reported wind is 240 degrees 12 knots. What are the wind components acting on the aircraft on take-off and landing?",
@@ -5504,61 +5511,71 @@
 		"text": "58 Given the following conditions, the fuel consumption equals... Pressure altitude: 2000 ft Temperature: 31\u00B0 C RPM: 2400 See annex (PFP-012) Siehe Anlage 10 ",
 		"options": ["19.5 l/h.", "19.1 l/h.", "21.7 l/h.", "22.8 l/h."],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-012.png"
 	},
 	{
 		"text": "59 Given the following conditions, the climb speed equals... Outside air temperature: -20\u00B0 C Pressure altitude: 10000 ft See annex (PFP-011) Siehe Anlage 11 ",
 		"options": ["200 ft/min.", "350 ft/min.", "390 ft/min.", "450 ft/min."],
 		"correctAnswer": 3,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-011.png"
 	},
 	{
 		"text": "60 What range can be achieved at the following conditions? Outside air temperature: 6\u00B0 C Pressure Altitude: 6000 ft Power: 65 % See annex (PFP-013) Siehe Anlage 12 ",
 		"options": ["457 NM", "503 NM", "444 NM", "482 NM"],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-013.png"
 	},
 	{
 		"text": "61 Given the following information, what range can be achieved? Outside air temperature: 22\u00B0 C Pressure altitude: 2000 ft Power: 55 % See annex (PFP-013) Siehe Anlage 12 ",
 		"options": ["550 NM", "480 NM", "450 NM", "500 NM"],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-013.png"
 	},
 	{
 		"text": "62 Given the following conditions, the TAS equals... Outside air temperature: 10\u00B0 C Pressure altitude: 6000 ft Power: 65 % See annex (PFP-014) Siehe Anlage 13 ",
 		"options": ["96 kt.", "92 kt.", "88 kt.", "100 kt."],
 		"correctAnswer": 2,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-014.png"
 	},
 	{
 		"text": "63 Given the following conditions, the TAS equals... Outside air temperature: -2\u00B0 C Pressure altitude: 8000 ft Power: 75 % See annex (PFP-014) Siehe Anlage 13 ",
 		"options": ["104 kt.", "100 kt.", "95 kt.", "110 kt."],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-014.png"
 	},
 	{
 		"text": "64 Which maximum rate of climb can the aircraft reach at 9000 ft pressure altitude and OAT 12\u00B0 C? See annex (PFP-011) Siehe Anlage 11 ",
 		"options": ["200 ft/min", "250 ft/min", "350 ft/min", "300 ft/min"],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-011.png"
 	},
 	{
 		"text": "65 Which is the maximum rate of climb for the aircraft at 6500 ft pressure altitude and an OAT of 0\u00B0 C? See annex (PFP-011) Siehe Anlage 11 ",
 		"options": ["480 ft / min", "400 ft / min", "520 ft / min", "800 ft / min"],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-011.png"
 	},
 	{
 		"text": "66 What is the true airspeed (TAS) [kt] and fuel consumption [l/h] for cruise flight with 60 % power in flight level 60 under the following conditions? Temperature: ISA - 20\u00B0 C QNH: 980 hPa See annex (PFP-012) Siehe Anlage 10 ",
 		"options": ["96 kt. 19.1 l/h.", "95 kt. 19.6 l/h.", "110 kt. 25.1 l/h.", "95,75 kt. 19.8 l/h."],
 		"correctAnswer": 2,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-012.png"
 	},
 	{
 		"text": "67 What is the true airspeed (TAS) [kt] and fuel consumption [l/h] for cruise flight with 70 % power in flight level 60 under the following conditions? Temperature: ISA - 20\u00B0 C QNH: 980 hPa See annex (PFP-012) Siehe Anlage 10 ",
 		"options": ["110 kt. 23.9 l/h.", "100 kt. 19.3 l/h.", "95 kt. 19.6 l/h.", "105 kt. 21.5 l/h."],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-012.png"
 	},
 	{
 		"text": "68 What is the fuel flow and the true airspeed for cruise flight with 60 % power in flight level 85 at an OAT of -25\u00B0 C? See annex (PFP-014) Siehe Anlage 13 ",
@@ -5569,31 +5586,36 @@
 			"Fuel flow: 18.5 l. TAS: 85 kt."
 		],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-014.png"
 	},
 	{
 		"text": "69 At which airspeed do you climb to flight level (FL) 75 after a departure from an airfield which is located at a pressure altitude of 3000 ft with an initial mass of 3000 lbs? OAT at airfield: 25\u00B0 C OAT in FL 75: 0\u00B0 C See annex (PFP-023) Siehe Anlage 14 ",
 		"options": ["90 kt", "120 kt", "110 kt", "100 kt"],
 		"correctAnswer": 3,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-023.png"
 	},
 	{
 		"text": "70 What is the required fuel to climb from FL 65 to FL 95 under the following conditions? Aircraft mass: 3000 lb. OAT in FL 65: -5\u00B0 C OAT in FL 95: -15\u00B0 C See annex (PFP-023) Siehe Anlage 14 ",
 		"options": ["1 GAL", "2 GAL", "6 GAL", "3 GAL"],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-023.png"
 	},
 	{
 		"text": "71 What is the required distance to climb from FL 65 to FL 95 under the following conditions: Aircraft mass: 3000 lb. OAT in FL 65: -5\u00B0 C OAT in FL 95: -15\u00B0 C See annex (PFP-023) Siehe Anlage 14 ",
 		"options": ["6 NM", "3 NM", "16 NM", "10 NM"],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-023.png"
 	},
 	{
 		"text": "72 What is the required distance to climb to flight level (FL) 75 after a departure from an airfield which is located at a pressure altitude of 3000 ft with an initial mass of 3000 lbs? OAT at airfield: 25\u00B0 C OAT in FL 75: 0\u00B0 C See annex (PFP-023) Siehe Anlage 14 ",
 		"options": ["10 NM", "6 NM", "4 NM", "7 NM"],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-023.png"
 	},
 	{
 		"text": "73 The term \u0022maximum elevation figure\u0022 (MEF) is defined as...",
@@ -5638,13 +5660,15 @@
 		"text": "77 The upper limit of LO R 16 equals... See annex (PFP-056) Siehe Anlage 15 ",
 		"options": ["FL150.", "1 500 m MSL.", "1 500 ft MSL.", "1.500 ft GND."],
 		"correctAnswer": 3,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-056.png"
 	},
 	{
 		"text": "78 The upper limit of LO R 4 equals... See annex (PFP-030) Siehe Anlage 16 ",
 		"options": ["4.500 ft AGL.", "4.500 ft MSL.", "1.500 ft MSL.", "1.500 ft AGL."],
 		"correctAnswer": 2,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-030.png"
 	},
 	{
 		"text": "79 How much taxi fuel must be consumed before take-off to reduce the aircraft mass to the maximum take-off mass? Maximum ramp mass (MRM): 1150 kg Actual ramp mass: 1148 kg Maximum take-off mass (MTOM): 1145 kg",
@@ -5773,7 +5797,8 @@
 			"TAS = 145 kt FF = 11.9 GPH"
 		],
 		"correctAnswer": 3,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "Anlage 21.png"
 	},
 	{
 		"text": "94 (For this questions, use attachment or CAP697 SEP1 Fig. 2.2 Table 2.2.3) Planning a flight from EDWH (Oldenburg Hatten) to EDWF (Leer Papenburg), the following conditions apply: Cruise level = FL 65 Temperature = ISA\u002B20 Cruise weight = 3400 lbs Power setting = 23.0 in. HG @ 2300 RPM What Indicated Airspeed (IAS) and Fuel Flow (FF) can be expected? Siehe Anlage 21 ",
@@ -5784,19 +5809,22 @@
 			"IAS = 150 kt FF = 12.3 GPH"
 		],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "Anlage 21.png"
 	},
 	{
 		"text": "95 (For this questions use attachment or CAP697 SEP1 Fig. 2.2 Table 2.2.3) For planning a VFR flight, the following data are given: Flight time with planning \u0022overhead-overhead\u0022 = 2h 43min Pressure Altitude = 6.500 ft Temperature = ISA-20 Power setting = 2300 RPM Taxi Fuel = 2 USG Additional time for climb = 7 min, Additional time for approach and landing = 10 min The reserve fuel has to be 30% of trip fuel. Determine the minimum block fuel: Siehe Anlage 21 ",
 		"options": ["47.3 USG", "50.4 USG", "43.8 USG", "39.2 USG"],
 		"correctAnswer": 2,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "Anlage 21.png"
 	},
 	{
 		"text": "96 (For this questions use attachment or CAP697 SEP1 Fig. 2.2 Table 2.2.3) For planning a VFR flight, the following data are given: Flight time with planning \u0022overhead-overhead\u0022 = 2h 42min Pressure Altitude = 7.500 ft Temperature = ISA Power setting = 2300 RPM Taxi Fuel = 2 USG Additional time for climb = 8 min, Additional time for approach and landing = 10 min The reserve fuel has to be 30% of trip fuel. Determine the minimum block fuel: Siehe Anlage 21 ",
 		"options": ["51.8 USG", "37.7 USG", "46.4 USG", "48.4 USG"],
 		"correctAnswer": 4,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "Anlage 21.png"
 	},
 	{
 		"text": "97 Given the following data for a VFR flight: Trip fuel = 70 US gallons Contingency fuel = 5% of trip fuel Alternate and final reserve fuel = 20 US gallons Usable fuel at take-off = 95 US gallons After half of the distance you read that you have consumed 40 US gallons. Assume that fuel flow remains unchanged. Which statement is correct?",
@@ -5824,19 +5852,22 @@
 		"text": "99 (For this question, please use annex PFP-061) According ICAO, what symbol indicates a group of unlighted obstacles? Siehe Anlage 22 ",
 		"options": ["C", "B", "A", "D"],
 		"correctAnswer": 1,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-061.png"
 	},
 	{
 		"text": "100 (For this question, please use annex PFP-062) According ICAO, what symbol indicates a civil airport (not international airport) with paved runway? Siehe Anlage 23 ",
 		"options": ["D", "A", "B", "C"],
 		"correctAnswer": 2,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-062.png"
 	},
 	{
 		"text": "101 (For this question, please use annex PFP-063) According ICAO, what symbol indicates a general spot elevation? Siehe Anlage 24 ",
 		"options": ["B", "C", "A", "D"],
 		"correctAnswer": 2,
-		"topic": "Flight Performance and Planning"
+		"topic": "Flight Performance and Planning",
+		"attachment": "PFP-063.png"
 	},
 	{
 		"text": "1 The thickness of the wing is defined as the distance between the lower and the upper side of the wing at the...",
@@ -7437,7 +7468,8 @@
 			"\u0022Turning Instruments\u0022 and \u0022Circuit Breaker\u0022"
 		],
 		"correctAnswer": 3,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-004.png"
 	},
 	{
 		"text": "41 What could be a reason for changing the runway indicators at aerodromes (e.g. from runway 06 to runway 07)?",
@@ -7509,7 +7541,8 @@
 		"text": "47 What is the radial from VOR Br\u00FCnkendorf (BKD) (53\u00B002?N, 011\u00B033?E) to Pritzwalk (EDBU) (53\u00B011\u0027N, 12\u00B011\u0027E)? See annex (NAV-031) Siehe Anlage 3 ",
 		"options": ["024\u00B0", "204\u00B0", "248\u00B0", "068\u00B0"],
 		"correctAnswer": 4,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-031.png"
 	},
 	{
 		"text": "48 The distance between two airports is 220 NM. On an aeronautical navigation chart the pilot measures 40.7 cm for this distance. The chart scale is...",
@@ -7526,13 +7559,15 @@
 			"53\u00B020\u0027N, 11\u00B010\u0027E"
 		],
 		"correctAnswer": 4,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-031.png"
 	},
 	{
 		"text": "50 What is the distance from VOR Br\u00FCnkendorf (BKD) (53\u00B002?N, 011\u00B033?E) to Pritzwalk (EDBU) (53\u00B011\u0027N, 12\u00B011\u0027E)? See annex (NAV-031) Siehe Anlage 3 ",
 		"options": ["24 km", "42 NM", "24 NM", "42 km"],
 		"correctAnswer": 3,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-031.png"
 	},
 	{
 		"text": "51 A distance of 7.5 cm on an aeronautical chart represents a distance of 60.745 NM in reality. What is the chart scale?",
@@ -7610,7 +7645,8 @@
 		"text": "63 What is the true course (TC) from Uelzen (EDVU) (52\u00B059?N, 10\u00B028?E) to Neustadt (EDAN) (53\u00B022\u0027N, 011\u00B037\u0027E)? See annex (NAV-031) Siehe Anlage 3 ",
 		"options": ["241\u00B0", "235\u00B0", "061\u00B0", "055\u00B0"],
 		"correctAnswer": 3,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-031.png"
 	},
 	{
 		"text": "64 An aircraft is flying at aFL 75 with an outside air temperature (OAT) of -9\u00B0C. The QNH altitude is 6500 ft. The true altitude equals...",
@@ -7622,7 +7658,8 @@
 		"text": "65 What is the distance from Neustadt (EDAN) (53\u00B022\u0027N, 011\u00B037\u0027E) to Uelzen (EDVU) (52\u00B059?N, 10\u00B028?E)? See annex (NAV-031) Siehe Anlage 3 ",
 		"options": ["46 NM", "78 km", "46 km", "78 NM"],
 		"correctAnswer": 1,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-031.png"
 	},
 	{
 		"text": "66 An aircraft is flying at a pressure altitude of 7000 feet with an outside air temperature (OAT) of \u002B11\u00B0C. The QNH altitude is 6500 ft. The true altitude equals...",
@@ -7756,7 +7793,8 @@
 			"TH: 173\u00B0. MH: 184\u00B0. MC: 178\u00B0."
 		],
 		"correctAnswer": 2,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-014.png"
 	},
 	{
 		"text": "85 What radio navigation aid can be received with the attached aerial? See figure (NAV-017) Siehe Anlage 5 ",
@@ -8060,13 +8098,15 @@
 		"text": "121 Where is the aircraft located in relation to the VOR? See annex (NAV-022) Siehe Anlage 7 ",
 		"options": ["Northeast", "Southeast", "Southwest", "Northwest"],
 		"correctAnswer": 1,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-022.png"
 	},
 	{
 		"text": "122 The aircraft is on radial... See annex (NAV-024) Siehe Anlage 8 ",
 		"options": ["066\u00B0.", "234\u00B0.", "060\u00B0.", "246\u00B0."],
 		"correctAnswer": 2,
-		"topic": "Navigation"
+		"topic": "Navigation",
+		"attachment": "NAV-024.png"
 	},
 	{
 		"text": "123 The range of a VOR is affected by...",
