@@ -916,12 +916,23 @@
 	{
 		"text": "96 With respect to aircraft accident and incident investigation, what are the three categories regarding aircraft occurrences?",
 		"options": [
-			"Event Crash Disaster",
-			"Happening Event Serious event",
-			"Incident Serious incident Accident",
-			"Event Serious event Accident"
+			"Event, Crash, Disaster",
+			"Happening, Event, Serious event",
+			"Incident, Serious incident, Accident",
+			"Event, Serious event, Accident"
 		],
 		"correctAnswer": 3,
+		"topic": "Air Law"
+	},
+	{
+		"text": "97 What is the primary purpose of an aircraft accident investigation?",
+		"options": [
+			"To identify the reasons and work out safety recommendations",
+			"To Determine the guilty party and draw legal consequences",
+			"To clarify questions of liability within the meaning of compensation for passengers",
+			"To work for the public prosecutor and help to follow-up flight accidents"
+		],
+		"correctAnswer": 1,
 		"topic": "Air Law"
 	},
 	{
