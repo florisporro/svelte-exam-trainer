@@ -7,16 +7,22 @@
 		dark --prefersdark;
 }
 
-/* daisyUI 5's neutral is pure black; v2's was slate. Matches daisyUI's own
-   selector so it wins in both the light and dark theme blocks. */
+/* daisyUI 5's neutral is near-black; v2's was a blue-grey. Matches daisyUI's
+   own selector so it wins in both the light and dark theme blocks. */
 :root:not([data-theme]) {
 	--color-neutral: #3d4451;
-	--color-neutral-content: #d7dde4;
+	--color-neutral-content: #fff;
 }
 
 /* daisyUI 5 dropped v2's uppercase button text */
 .btn {
 	@apply uppercase;
+}
+
+/* Range fill and track both derive from currentColor in daisyUI 5, where v2
+   drove them off its own base-content. */
+.range {
+	color: #1f2937;
 }
 
 body,
