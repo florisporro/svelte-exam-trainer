@@ -1,27 +1,16 @@
-<script lang="ts">
-	import questions from '../data.json';
+<script lang="ts" module>
+	import rawQuestions from '../data.json';
+	import type { MultipleChoiceQuestion } from '$lib/multiplechoicequestion';
 
-	questions.forEach((q) => (q.correctAnswer = q.correctAnswer - 1));
+	// data.json numbers answers from 1, the app indexes from 0
+	const questions: MultipleChoiceQuestion[] = rawQuestions.map((q) => ({
+		...q,
+		correctAnswer: q.correctAnswer - 1
+	}));
 
-	const topics = new Set(questions.map((q) => q.topic));
+	const topics = [...new Set(questions.map((q) => q.topic))];
 
-	import Quiz from '../components/Quiz.svelte';
-	import { Quiz as QuizType } from '$lib/quiz';
-
-	import { browser } from '$app/environment';
-
-	let localStorageValue;
-	if (browser) {
-		localStorageValue = localStorage.getItem('quizHistory');
-	}
-	let quizHistory: { [key: string]: any }[] = localStorageValue
-		? JSON.parse(localStorageValue)
-		: [];
-
-	let quizActive = false;
-
-	let numberOfQuestionsIndex = 3;
-	let numberOfQuestions: { [key: number]: number | boolean } = {
+	const numberOfQuestions: { [key: number]: number | boolean } = {
 		0: 5,
 		1: 10,
 		2: 13,
@@ -31,41 +20,49 @@
 		6: 60,
 		7: true
 	};
-
-	let passingGrade = 0.75;
-
-	function finishQuiz(quiz: QuizType) {
-		quizHistory.push({
-			correctAnswers: quiz.correctAnswers,
-			incorrectAnswers: quiz.incorrectAnswers,
-			topic: quiz.topic,
-			score: quiz.getScore(),
-			passingGradeFactor: quiz.passingGradeFactor
-		});
-		quizHistory = quizHistory;
-		localStorage.setItem('quizHistory', JSON.stringify(quizHistory));
-		quizActive = false;
-	}
-
-	$: console.log(quizHistory);
-
-	let quiz: QuizType;
 </script>
 
-{#if quizActive}
+<script lang="ts">
+	import Quiz from '../components/Quiz.svelte';
+	import { Quiz as QuizType } from '$lib/quiz.svelte';
+	import { browser } from '$app/environment';
+
+	const storedHistory = browser ? localStorage.getItem('quizHistory') : null;
+
+	let quizHistory: { [key: string]: any }[] = $state(
+		storedHistory ? JSON.parse(storedHistory) : []
+	);
+	let quiz: QuizType | undefined = $state();
+	let quizActive = $state(false);
+	let numberOfQuestionsIndex = $state(3);
+	let passingGrade = $state(0.75);
+
+	function saveHistory() {
+		localStorage.setItem('quizHistory', JSON.stringify(quizHistory));
+	}
+
+	function startQuiz(selection: MultipleChoiceQuestion[], topic: string, count: number | boolean) {
+		quiz = new QuizType(selection, topic, count, passingGrade);
+		quizActive = true;
+	}
+
+	function finishQuiz(finished: QuizType) {
+		quizHistory.push({
+			correctAnswers: finished.correctAnswers,
+			incorrectAnswers: finished.incorrectAnswers,
+			topic: finished.topic,
+			score: finished.getScore(),
+			passingGradeFactor: finished.passingGradeFactor
+		});
+		saveHistory();
+		quizActive = false;
+	}
+</script>
+
+{#if quizActive && quiz}
 	<div class="quiz mb-10">
-		<Quiz
-			{quiz}
-			on:complete={(event) => {
-				finishQuiz(event.detail);
-			}}
-		/>
-		<button
-			class="btn btn-outline"
-			on:click={() => {
-				quizActive = false;
-			}}
-		>
+		<Quiz {quiz} oncomplete={finishQuiz} />
+		<button class="btn btn-outline" onclick={() => (quizActive = false)}>
 			Return home (abort quiz)
 		</button>
 	</div>
@@ -97,10 +94,11 @@
 				please report them on GitHub.
 			</p>
 			<p>
-				<!-- svelte-ignore security-anchor-rel-noreferrer -->
 				If this tool has helped you, and you wish to give thanks, please
-				<a href="https://www.stichtinghoogvliegers.nl/ondersteun/doneer-via-tikkie" target="_blank"
-					>consider donating to the Dutch Stichting Hoogvliegers</a
+				<a
+					href="https://www.stichtinghoogvliegers.nl/ondersteun/doneer-via-tikkie"
+					target="_blank"
+					rel="noreferrer">consider donating to the Dutch Stichting Hoogvliegers</a
 				>, this not-for-profit organisation gives sick and disabled children the opportunity to have
 				an airborne adventure of a lifetime.
 			</p>
@@ -112,7 +110,7 @@
 				type="range"
 				min="0"
 				max="7"
-				class="range"
+				class="range w-full"
 				step="1"
 			/>
 			<div class="w-full flex justify-between text-xs px-2">
@@ -128,7 +126,14 @@
 		</div>
 		<div class="passingGrade mb-10">
 			<p>Passing grade: {Math.round(passingGrade * 100)} %</p>
-			<input bind:value={passingGrade} type="range" min="0" max="1" class="range" step="0.05" />
+			<input
+				bind:value={passingGrade}
+				type="range"
+				min="0"
+				max="1"
+				class="range w-full"
+				step="0.05"
+			/>
 			<div class="w-full flex justify-between text-center text-xs">
 				<span>0%</span>
 				<span>10%</span>
@@ -144,40 +149,30 @@
 			</div>
 		</div>
 		<ul class="topics mb-10">
-			{#each [...topics] as topic}
+			{#each topics as topic}
 				{@const topicHistory = quizHistory.filter((q) => q.topic === topic)}
 				<li>
-					<div class="btn-group">
+					<div class="join">
 						<button
-							class="btn"
-							on:click={() => {
-								quiz = new QuizType(
+							class="btn btn-neutral join-item"
+							onclick={() =>
+								startQuiz(
 									questions.filter((q) => q.topic === topic),
 									topic,
-									numberOfQuestions[numberOfQuestionsIndex],
-									passingGrade
-								);
-								quizActive = true;
-							}}
+									numberOfQuestions[numberOfQuestionsIndex]
+								)}
 						>
 							{topic}
 						</button>
 						{#if topicHistory.length > 0}
 							{@const incorrectAnswers = topicHistory.map((q) => q.incorrectAnswers).flat()}
 							<button
-								class="btn btn-outline"
-								on:click={() => {
-									quiz = new QuizType(
-										incorrectAnswers,
-										'Incorrect questions quiz',
-										incorrectAnswers.length,
-										passingGrade
-									);
-									quizActive = true;
-								}}
+								class="btn btn-outline join-item"
+								onclick={() =>
+									startQuiz(incorrectAnswers, 'Incorrect questions quiz', incorrectAnswers.length)}
 							>
-								Repeat incorrect</button
-							>
+								Repeat incorrect
+							</button>
 						{/if}
 					</div>
 					{#if topicHistory.length > 0}
@@ -196,15 +191,8 @@
 				<li>
 					<button
 						class="btn btn-accent"
-						on:click={() => {
-							quiz = new QuizType(
-								incorrectAnswers,
-								'Incorrect questions quiz',
-								incorrectAnswers.length,
-								passingGrade
-							);
-							quizActive = true;
-						}}
+						onclick={() =>
+							startQuiz(incorrectAnswers, 'Incorrect questions quiz', incorrectAnswers.length)}
 					>
 						Repeat all incorrect questions
 					</button>
@@ -215,9 +203,9 @@
 			<div class="text-center">
 				<button
 					class="btn btn-outline"
-					on:click={() => {
+					onclick={() => {
 						quizHistory = [];
-						localStorage.setItem('quizHistory', JSON.stringify(quizHistory));
+						saveHistory();
 					}}
 				>
 					Clear history
@@ -228,6 +216,8 @@
 {/if}
 
 <style lang="postcss">
+	@reference '../app.css';
+
 	ul.topics {
 		@apply list-none grid grid-cols-1 gap-4 text-center;
 	}
@@ -241,7 +231,7 @@
 	}
 
 	ul.scores li {
-		@apply text-center p-1 rounded gap-2 text-white;
+		@apply text-center p-1 rounded-sm gap-2 text-white;
 		list-style: none;
 	}
 

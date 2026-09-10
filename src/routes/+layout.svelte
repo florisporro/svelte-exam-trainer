@@ -1,7 +1,9 @@
-<script>
-	import '../app.pcss';
+<script lang="ts">
+	import '../app.css';
+
+	let { children } = $props();
 </script>
 
 <main class="container mx-auto p-5">
-	<slot />
+	{@render children()}
 </main>

@@ -6,13 +6,13 @@ Demo: [Private Pilot License theory exams](https://ppl-exam-trainer.pages.dev/)
 
 ## Developing
 
-Clone the repository locally, then install dependencies with `npm install` (or `pnpm install` or `yarn`) and start a development server:
+Clone the repository locally, then install dependencies with `bun install` and start a development server:
 
 ```bash
-npm run dev
+bun run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+bun run dev -- --open
 ```
 
 ## Building
@@ -20,18 +20,20 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+bun run build
 ```
 
-You can preview the production build with `npm run preview`.
+The site is fully static. `@sveltejs/adapter-static` prerenders it into `build/`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Preview the production build with `bun run preview`, or serve it exactly as Cloudflare will with `bunx wrangler dev`.
 
 ## Deployment
 
-Svelte is easily deployed on a number of platforms. The demo above is deployed on CloudFlare Pages.
+The demo is a Cloudflare Worker serving `build/` as static assets, configured in `wrangler.jsonc`. There is no worker script: no code runs at request time.
+
+Cloudflare builds and deploys on every push to `ppl-exam-trainer` through its GitHub connection. To deploy by hand instead, run `bun run deploy`.
 
 ## Contibutors
 
- - paulditerwich
- - florisporro
+- paulditerwich
+- florisporro

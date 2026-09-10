@@ -5,10 +5,10 @@ export class Quiz {
 	questions: MultipleChoiceQuestion[];
 
 	// The current question that the user is answering
-	currentQuestionIndex = 0;
+	currentQuestionIndex = $state(0);
 
 	// The list of questions that the user has answered
-	answers: { [key: number]: number } = {};
+	answers: { [key: number]: number } = $state({});
 
 	// The topic of the quiz
 	topic: string;

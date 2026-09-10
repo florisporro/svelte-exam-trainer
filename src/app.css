@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Teko:wght@600&display=swap');
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@plugin 'daisyui' {
+	themes:
+		light --default,
+		dark --prefersdark;
+}
+
+/* daisyUI 5 dropped v2's uppercase button text */
+.btn {
+	@apply uppercase;
+}
 
 body,
 main {
@@ -14,20 +22,8 @@ main {
 	@apply min-h-screen;
 }
 
-h2,
-h3 {
-	@apply mb-12;
-}
-
 h1 {
 	font-family: 'Teko', sans-serif;
-}
-
-h2 {
-	@apply text-white text-6xl text-center;
-}
-h3 {
-	@apply text-white text-3xl text-center;
 }
 
 a {
@@ -35,8 +31,4 @@ a {
 }
 a:hover {
 	@apply text-sky-800 no-underline transition-all;
-}
-
-.segment > p {
-	@apply text-white text-center font-bold;
 }

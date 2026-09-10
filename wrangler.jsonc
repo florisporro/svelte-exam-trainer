@@ -1,0 +1,9 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "ppl-exam-trainer",
+	"compatibility_date": "2026-09-10",
+	"assets": {
+		"directory": "build",
+		"not_found_handling": "404-page"
+	}
+}
